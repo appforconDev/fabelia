@@ -1,0 +1,12 @@
+Flask
+flask-cors
+python-dotenv
+Flask-Migrate
+stripe
+boto3
+requests
+Pillow
+mutagen
+openai
+gtts
+pdf2image

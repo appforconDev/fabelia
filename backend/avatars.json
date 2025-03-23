@@ -1,0 +1,72 @@
+{
+  "childrenAvatars": {
+    "male": [
+      {
+        "id": "male1",
+        "description": "8-year-old boy, red jacket, green backpack with owl keychain, blond hair under black beanie, blue eyes, curious and adventurous."
+      },
+      {
+        "id": "male2",
+        "description": "10-year-old boy, blue cap, striped sweater, messy dark brown hair, brown eyes, wide smile, always carries a pocket knife."
+      },
+      {
+        "id": "male3",
+        "description": "9-year-old boy, yellow raincoat, muddy rubber boots, curly black hair, green eyes, loves jumping in puddles."
+      },
+      {
+        "id": "male4",
+        "description": "11-year-old boy, white t-shirt, jeans, tousled brown hair, round glasses, book in hand, thoughtful and shy."
+      },
+      {
+        "id": "male5",
+        "description": "9-year-old boy, blue hoodie, green shorts, short curly black hair, brown eyes, always eager to explore."
+      },
+      {
+        "id": "male6",
+        "description": "10-year-old boy, yellow t-shirt with sun design, denim shorts, red sandals, carries superhero stickered water bottle."
+      },
+      {
+        "id": "male7",
+        "description": "11-year-old boy, white and blue striped shirt, dark pants, short dark brown hair, carries collectible card bag, warm smile."
+      },
+      {
+        "id": "male8",
+        "description": "8-year-old boy, red t-shirt, beige shorts, bright red sneakers, curly black hair in small braids, carries blue stuffed animal."
+      }
+    ],
+    "female": [
+      {
+        "id": "female1",
+        "description": "8-year-old girl, pink dress, pink sandals, blonde curls, green eyes, shy but friendly, carries a teddy bear."
+      },
+      {
+        "id": "female2",
+        "description": "10-year-old girl, green sweater, blue jeans, short black hair, brown eyes, backpack with city stickers, confident."
+      },
+      {
+        "id": "female3",
+        "description": "9-year-old girl, yellow skirt, striped red/white shirt, red sneakers, curly red hair, mischievous blue eyes, carries jump rope."
+      },
+      {
+        "id": "female4",
+        "description": "11-year-old girl, purple jacket, light sneakers, long black braid, dark brown eyes, carries notebook, imaginative."
+      },
+      {
+        "id": "female5",
+        "description": "9-year-old girl, purple dress, braided black hair with colorful beads, dark brown eyes, warm smile, holds a doll."
+      },
+      {
+        "id": "female6",
+        "description": "10-year-old girl, green tunic with flower embroidery, pink leggings, long black braid, dark eyes, loves drawing."
+      },
+      {
+        "id": "female7",
+        "description": "8-year-old girl, red skirt, white shirt with flower print, yellow sandals, curly dark brown hair in ponytails, wears butterfly clip."
+      },
+      {
+        "id": "female8",
+        "description": "11-year-old girl, pink jacket, blue jeans, straight black shoulder-length hair, dark brown eyes, carries a paper kite."
+      }
+    ]
+  }
+}

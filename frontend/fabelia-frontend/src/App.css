@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
+
+/* Globala klasser för knappar */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #6a1b9a; /* Purple */
+  color: #ffffff; /* White */
+  box-shadow: 0px 4px 10px rgba(106, 27, 154, 0.5); /* Purple shadow */
+}
+
+.btn-primary:hover {
+  background-color: #4a148c; /* Dark Purple */
+}
+
+.btn-secondary {
+  background-color: #dca500; /* Gold */
+  color: #ffffff; /* White */
+  box-shadow: 0px 4px 10px rgba(220, 165, 0, 0.5); /* Gold shadow */
+}
+
+.btn-secondary:hover {
+  background-color: #282c34; /* Dark Gray */
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #6a1b9a; /* Purple */
+  color: #6a1b9a; /* Purple */
+}
+
+.btn-outline:hover {
+  background-color: #6a1b9a; /* Purple */
+  color: #ffffff; /* White */
+}
+
+/* Lägg till extra styling om det behövs */
+.bg-lightGray {
+  background-color: #f5f5f5;
+}
+
+.text-darkGray {
+  color: #282c34;
+}
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+.text-gold {
+  color: #dca500 !important;
+}
+.font-heading {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.shadow-xlPurple {
+  box-shadow: 0px 4px 10px rgba(106, 27, 154, 0.5);
+}
+
+.shadow-xlGold {
+  box-shadow: 0px 4px 10px rgba(220, 165, 0, 0.5);
+}
+
+.shadow-lg {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100; /* Håller headern ovanpå innehållet */
+  background: linear-gradient(90deg, #282c34, #347fa4, #282c34);  /*Gradientbakgrund */
+  color: white;
+  height: 80px; /* Fast höjd */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  /* Glass-effekt */
+  /* background: rgba(20, 20, 30, 0.4); Genomskinlig bakgrund */
+  backdrop-filter: blur(10px); /* Blur-effekt */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtil kantlinje */
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertikal centrering av texten och logotypen */
+  position: relative;
+}
+
+.logo-image {
+  width: 140px;
+  height: 140px;
+  margin-right: 0.5rem;
+  position: absolute;
+  bottom: -65px; /* Standardvärde för desktop */
+  left: 0; /* Standardvänsterjustering */
+
+  /* Anpassning för mindre skärmar */
+  @media (max-width: 768px) {
+    width: 100px; /* Mindre storlek på mobiler */
+    height: 100px;
+    bottom: -20px; /* Justera hur mycket den sticker ut */
+  }
+
+  @media (max-width: 480px) {
+    width: 80px; /* Ännu mindre på väldigt små skärmar */
+    height: 80px;
+    bottom: 3px; /* Ytterligare justering för små enheter */
+  }
+}
+
+.logo {
+  font-size: 2.4rem;
+  color: #fff; /* Exempeltextfärg */
+  margin-left: 150px; /* Standard för större skärmar */
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 5px #00D1FF,
+               0 0 20px #00D1FF; 
+}
+
+/* Centrera logotypen när hamburgermenyn syns (små skärmar) */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 69%; /* Återställ margin */
+    width: 100%; /* Se till att den fyller hela bredden */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.text-animation {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, transparent, white, transparent);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slide 4s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+
+  margin-left: auto;
+}
+
+.nav-links li a,
+.login-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.login-link:hover {
+  color: #dca500;
+}
+
+.credits {
+  margin-right: 1rem;
+}
+
+.user-greeting {
+  margin-right: 1rem;
+}
+
+.notifications {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.notification-bubble {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+.hero {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+}
+
+.hero button {
+  margin-top: 1.5rem;
+}
+
+footer {
+  /*position: fixed;*/
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #282c34, #3a3f47); /* Gradientbakgrund */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.875rem;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.footer p.text-sm {
+  font-size: 0.875rem;
+}
+
+
+html, body {
+  height: 100%; /* Säkerställ att dessa täcker hela höjden */
+  margin: 0;
+  overflow-x: hidden;
+  /*font-family: 'EB Garamond';*/
+}
+#root {
+  height: 100%; /* Täcker hela höjden */
+  overflow-x: hidden; /* Förhindrar horisontell scroll */
+  overflow-y: auto; /* Behåller vertikal scroll */
+  width: 100%;
+}
+
+.hero-section {
+  position: absolute; /* Placera hero-section absolut inom föräldern */
+  top: 6vh; /* 100px från toppen av föräldern */
+  left: 50%; /* Centrera horisontellt */
+  transform: translateX(-50%); /* Justera centrering */
+  width: 65vw; /* 300px bred */
+  background: rgba(255, 255, 255, 0.85); /* Transparent bakgrund */
+  /*background: linear-gradient(90deg, rgba(40, 44, 52, 0.8), rgba(58, 63, 71, 0.8));
+*/
+  padding: 20px; /* Lättare padding inuti sektionen */
+  border-radius: 8px;
+  text-align: center;
+  white-space: pre-line;
+  word-wrap: break-word;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column; /* Vertikal layout */
+  min-height: 100vh; /* Täcker hela höjden av skärmen */
+}
+
+.main-content {
+  flex: 1; /* Tar upp det återstående utrymmet mellan header och footer */
+  padding-bottom: 200px; 
+
+}
+
+
+/* Kategorigrid styling för startsidan */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.category-item h3 {
+  margin-top: 10px;
+}
+#flipbook {
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-preview-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.book-preview-content {
+  position: relative;
+  width: 70%;
+  height: 90%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    background-color: #282c34;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-menu li {
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+/* Flipbook.css */
+.flipbook-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.custom-flipbook {
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+  background: #f0f0f0;
+  margin: 0 auto;
+}
+
+
+.page {
+  background-color: white;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-page {
+  margin-left: auto;
+  transform: translate(-50%);
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.1);
+}
+
+.last-page {
+  transform: translate(0%);
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.1);
+}
+
+
+.even-page {
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.1);
+}
+
+.odd-page {
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.1);
+}
+
+.page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.responsive-card {
+  max-width: 40%;
+}
+
+@media (max-width: 768px) {
+  .responsive-card {
+    max-width: 100%;
+  }
+}
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.neon-text {
+  text-shadow: 0 0 5px #00D1FF,
+               0 0 20px #00D1FF;
+}

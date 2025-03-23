@@ -1,0 +1,15 @@
+/* src/components/AudioPlayer.css */
+.audio-player-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .audio-player-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  .audio-player-container audio {
+    width: 100%;
+    max-width: 600px;
+  }
+  

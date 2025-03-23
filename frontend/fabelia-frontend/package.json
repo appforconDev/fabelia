@@ -1,0 +1,69 @@
+{
+  "name": "fabelia-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.5.0",
+    "amazon-cognito-identity-js": "^6.3.12",
+    "axios": "^1.7.9",
+    "canvas": "^2.11.2",
+    "cra-template": "1.2.0",
+    "jquery": "^3.7.1",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.473.0",
+    "page-flip": "^2.0.7",
+    "pdfjs-dist": "^2.16.105",
+    "pdfobject": "^2.3.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-flip-page": "^1.6.4",
+    "react-hook-form": "^7.54.1",
+    "react-pageflip": "^2.0.3",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "5.0.1",
+    "turn.js": "^1.0.5",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "globals": {
+      "$": "readonly",
+      "jQuery": "readonly"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "imports-loader": "^5.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "^5.8.2"
+  }
+}

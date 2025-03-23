@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "lucide-react": "^0.473.0",
+    "react-flip-page": "^1.6.4",
+    "react-router-dom": "^7.0.2"
+  }
+}

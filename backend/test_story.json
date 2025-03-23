@@ -1,0 +1,18 @@
+{
+    "title": "Lusse Börsmäklaren i Bollnäs",
+    "cover_image": "/Users/rickardwinbergh/Fabelia/backend/temp_images/test_cover.png",
+    "scenes": [
+        {
+            "scene_number": 1,
+            "chapter_title": "Ankomst till Bollnäs",
+            "scene_description": "Lusse kliver av tåget i Bollnäs, redo för en ny dag.",
+            "image_path": "/Users/rickardwinbergh/Fabelia/backend/temp_images/scene_1.png"
+        },
+        {
+            "scene_number": 2,
+            "chapter_title": "Natt på kontoret",
+            "scene_description": "Det är sent på kvällen och Lusse får ett oväntat meddelande.",
+            "image_path": "/Users/rickardwinbergh/Fabelia/backend/temp_images/scene_2.png"
+        }
+    ]
+}
